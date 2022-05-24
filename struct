@@ -1,0 +1,29 @@
+
+#include <string.h>
+
+#include <stdio.h>
+
+#include <string.h>
+#include <conio.h>
+void main()
+{
+    struct registroum {
+        char nome[10];
+        char sobrenome[10];
+        int idade;
+    }cliente[2];
+
+     printf(" digite o nome do cliente: ");
+     fflush(stdin);
+     fgets(cliente[1].nome, 10, stdin);
+
+     printf("\n\ndigite o sobrenome do cliente: ");
+     fflush(stdin);
+     fgets(cliente[1].sobrenome, 10, stdin);
+
+     cliente[2]= cliente[1];
+
+     printf("\n o nome do cliente vale: %s ", cliente[2].nome);
+     printf("\n o sobrenome do cliente vale: %s ", cliente[2].sobrenome);
+
+}
